@@ -23,3 +23,5 @@ lazy val foo = crossProject.in(file(".")).
 
 lazy val fooJVM = foo.jvm
 lazy val fooJS = foo.js
+
+fooJVM.enablePlugins(SbtXjcPlugin)
